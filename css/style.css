@@ -5,9 +5,14 @@
 }
 body {
   padding: 80px;
-  background-color: pink;
+  /* basckground-color: pink; */
+  font-family: 'Inter', sans-serif;
 }
 /* UTILITY */
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
 .fixed-top {
   position: fixed;
   top: 0;
@@ -24,6 +29,13 @@ body {
 .margin_top_standard {
   margin-top: 80px;
 }
+.margin_bottom_standard {
+  margin-bottom: 10px;
+}
+
+.margin_right_small {
+  margin-right: 10px;
+}
 .padding_top_standard {
   padding-top: 30px;
 }
@@ -31,6 +43,26 @@ body {
   padding-bottom: 30px;
 }
 
+.text_title {
+  font-weight: 700;
+  line-height: 45px;
+  font-size: 3.73rem;
+}
+.bold {
+  font-weight: bold;
+}
+.text_subtitle {
+
+  font-size: 18px;
+  color: #031b4e;
+}
+
+.blue {
+  color: rgb(0, 74, 255);
+}
+.white {
+  color: #fff;
+}
 /* HEADER */
 
 #ms_top_header {
@@ -49,12 +81,14 @@ body {
 
 
 #ms_top_header .ms_btn_white {
-  color: #006aff;
-  font-size: 0.9rem;
+  color: rgb(3, 28, 78);
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 #ms_top_header .ms_btn_border {
   background-color: white;
-  border: 1px solid #006aff;
+  background-size: 60%;
+  border: 1px solid rgb(3, 28, 78);
   box-shadow: none;
 }
 #ms_top_header .ms_button_menu {
@@ -63,4 +97,40 @@ body {
   box-shadow: none;
   background-color: white;
   color: #006aff;
+}
+
+
+#jumbotron {
+  width: 100%;
+  background-color: rgb(0, 105, 255);
+  background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+  background-repeat: repeat;
+  background-position: 110%;
+}
+#jumbotron .card {
+  width: 50%;
+  /* position: relative; */
+}
+
+#jumbotron .sign-in {
+  display: flex;
+
+
+}
+#jumbotron .card-header {
+  background-color: white;
+
+}
+
+#jumbotron .card-main {
+  background-color: white;
+
+}
+
+#jumbotron .card-main img {
+  height: 15px;
+  margin-bottom: 2px;
+}
+#jumbotron .card-main small a {
+  text-decoration: underline;
 }
