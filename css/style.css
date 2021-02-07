@@ -56,23 +56,39 @@ body {
   font-size: 18px;
   color: #031b4e;
 }
+.text-left {
+  float: left;
+}
 
 .blue {
-  color: rgb(0, 74, 255);
+  color: #004aff;
 }
 .white {
   color: #fff;
 }
+
+.bckgnd_grey {
+  background-color: #f3f5f9;
+}
+.bckgnd_white {
+  background-color: #fff;
+}
+.bckgnd_blue {
+  background-color: #0037b3;
+}
+.bckgnd_darkblue {
+  background-color: #031c4e;
+}
 /* HEADER */
 
-#ms_top_header {
+#top_header {
   width: 100%;
   background-color: white;
   height: 80px;
   line-height: 80px;
 }
 
-#ms_top_header img {
+#top_header img {
   width: 100%;
   background-color: white;
   width: 50%;
@@ -80,18 +96,18 @@ body {
 }
 
 
-#ms_top_header .ms_btn_white {
-  color: rgb(3, 28, 78);
+#top_header .ms_btn_white {
+  color: #031c4e;
   font-weight: bold;
   font-size: 1.1rem;
 }
-#ms_top_header .ms_btn_border {
+#top_header .ms_btn_border {
   background-color: white;
   background-size: 60%;
-  border: 1px solid rgb(3, 28, 78);
+  border: 1px solid #031c4e;
   box-shadow: none;
 }
-#ms_top_header .ms_button_menu {
+#top_header .ms_button_menu {
   margin-top: 20px;
   float: right;
   box-shadow: none;
@@ -133,4 +149,10 @@ body {
 }
 #jumbotron .card-main small a {
   text-decoration: underline;
+}
+
+/* MAIN */
+
+#partner_logo img {
+  width: 80%;
 }
