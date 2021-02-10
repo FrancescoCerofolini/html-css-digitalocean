@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  padding: 80px;
-  /* basckground-color: pink; */
+  font-size: 18px;
   font-family: 'Inter', sans-serif;
 }
 /* UTILITY */
@@ -52,19 +51,27 @@ body {
   font-weight: bold;
 }
 .text_subtitle {
-
   font-size: 18px;
   color: #031b4e;
+  padding: 3px;\
 }
-
+.text_middle_title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
 
 .blue {
   color: #004aff;
 }
+.blue_link {
+  color: #6ca5fc;
+}
 .white {
   color: #fff;
 }
-
+.grey {
+  color: #6f7b97;
+}
 .bckgnd_grey {
   background-color: #f3f5f9;
 }
@@ -116,6 +123,7 @@ body {
 
 #jumbotron {
   width: 100%;
+  padding-top: 80px;
   background-color: rgb(0, 105, 255);
   background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
   background-repeat: repeat;
@@ -158,8 +166,29 @@ body {
 }
 
 
+#central_screen img {
+  width: 80%;
+}
 .arrow {
   padding: 0 2rem;
+}
+.menu_block  {
+  list-style: none;
+  border-left: 1px solid #7fd1de;
+  padding: 10px;
+}
+
+.menu_block li {
+  padding: 2% 0;
+}
+
+.menu_block a {
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.menu_block a:hover {
+  color: #7fd1de;
+  text-decoration: underline;
 }
 
 
@@ -179,9 +208,41 @@ body {
 .menu_footer a {
   text-decoration: none;
   font-size: 0.9em;
-  color: white;
 }
 .menu_footer a:hover {
   color: #7fd1de;
   text-decoration: underline;
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.bubble {
+  position: relative;
+  width: 350px;
+  height: 80px;
+  padding: 0px;
+  background: #FFFFFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -15px;
+  top: 32px;
+}
+.sammy {
+  height: 50px;
 }
